@@ -1,0 +1,167 @@
+
+/*==================== HOME ====================*/
+.body{
+  position: relative;
+}
+
+.aritculo{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+.articulo__title{
+  color: var(--first-color);
+  margin-bottom: 1.5em;
+  font-size: 40px;
+
+}
+.articulo__desc{
+  margin-bottom: 1.5em;
+}
+.aritculo__info{
+  display: flex;
+  margin-bottom: 1em;
+  justify-content: space-between;
+}
+.icon{
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+
+.articulo__img{
+  width: 100%;
+  margin-bottom: 2em;
+  border-radius: 10px;
+}
+.container__imgs{
+  margin-top: 2em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+.main__coontent{
+  margin-top: 0;
+  grid-template-columns: 1fr;
+
+  height: auto;
+  img{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+  } 
+}
+.ortos_articulos{
+  margin-top: 2em;
+  h4{
+    color: var(--first-color);
+  }
+}
+
+.card__articulos{
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 20px;
+  padding-left: 30px;
+  box-shadow: .5em .5em 1em #0005;
+  h3{
+    color: var(--first-color);
+    margin-top: 0.4em;
+    font-size: 1p;
+    margin-bottom: 0.4em;
+  }
+  .card__hr{
+    margin-bottom: 5px;
+  }
+}
+.card__data{
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+  gap:10px;
+}
+.card__img{
+  border-radius: 5px;
+}
+.card__data-meta{
+  span{
+    display: block;
+    margin-top: 10px;
+  }
+}
+/* ===== other cards =====*/
+.container__cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2em;
+}
+
+
+/* ===== SERVICIOS =====*/
+
+
+
+/* ===== UBICANOS =====*/
+
+
+
+
+
+/* =================== MEDIA QUERIES======================================*/
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+  .section{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .section-title{
+    margin-bottom: var(--mb-6);
+  }
+  .section-title::after{
+    width: 80px;
+    top: 3rem;
+  }
+
+  .about__container, .grid_noticias, .casos__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: initial;
+  }
+
+  /* ===== IMAGENES DE LEL ARTICULO ===== */
+  .container__imgs{
+
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2em;
+    
+  }
+  .main__coontent{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px){
+  .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ======  ===== */
+
+
+}

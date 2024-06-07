@@ -1,0 +1,128 @@
+/* ===== FOOTER =====*/
+
+.footer{
+  background-color: var(--cuarto-color);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+  position: relative;
+}
+.footer::after{
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: var(--color--title3);
+  border-radius: 50%;
+}
+.footer__title{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.footer__lista{
+  font-size: 12px;
+  font-weight: lighter;
+}
+.footer__link{
+  span{
+    font-size: 10px;
+    margin: 10px;
+    display: block;
+    font-weight: lighter;
+  }
+  a{
+    color: #fff;
+  }
+}
+
+.Enlaces__Rapidos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  
+  a{
+    font-size: 10px;
+    color: #fff;
+  }
+}
+.footer__linea{
+  background-color: var(--color--title3);
+  width: 80%;
+  margin: auto;
+}
+
+.footer_copy{
+  font-size: 15px;
+  font-weight: lighter;
+  color: #818080;
+}
+
+@media screen and (min-width: 768px){
+
+
+  /* ======= footer ============= */
+  
+  .footer__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "contactos ubicacion enlaces"
+                         "hr hr hr"
+                         "copi copi copi";
+    margin-top: 70px;
+  }
+  .footer__title{
+    margin-bottom: 20px;
+  }
+  .footer__lista{
+    li{
+      margin-bottom: 25px;
+      font-size: 13px;
+
+    }
+  }
+
+  .footer__link{
+    span{
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+    a{
+      font-size: 25px;
+      margin: 10px;
+    }
+  }
+  .ul_enlaces{
+    list-style: circle;
+    li{
+      a{
+        font-size: 13px;
+      }
+    }
+  }
+
+  .footer__contacto{
+    grid-area: contactos;
+  }
+  .footer__ubicanos{
+    grid-area: ubicacion;
+
+  }
+  .Enlaces__Rapidos{
+    grid-area: enlaces;
+  }
+  .footer__linea{
+    grid-area: hr;
+
+  }
+  .footer_copy{
+    grid-area: copi;
+    margin-top: 20px;
+
+  }
+
+}

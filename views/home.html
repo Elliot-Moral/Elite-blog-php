@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="fundación, niñez, familia">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/home.css">
+
+
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+
+        <!-- ========= Favicon ========== -->
+
+        <link rel="shortcut icon" type="image/jpg" href="assets/icons/fabicon.png"/>
+
+        <title>Te ayudamos, Asesoría legal | Elite Juridica Y Financiera | Abogados Expertos En Villavicencio</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+           <!-- <a href="#" class="nav__logo">Logo</a> -->
+           <img src="assets/icons/Logo -Elite.png"  width="200px" alt="">
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="#home" class="nav__link">Incio</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="sobre_nosotros" class="nav__link">Sobre Nosotros</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#servicios" class="nav__link">Servicios</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="contacto" class="nav__link">Contacto</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#" class="nav__link">Blog</a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <!-- Search button -->
+              <i class="ri-search-line nav__search" id="search-btn"></i>
+
+              <!-- Login button -->
+              <i class="ri-user-line nav__login" id="login-btn"></i>
+
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+     <!--==================== SEARCH ====================-->
+     <div class="search" id="search">
+        <form action="" class="search__form">
+           <i class="ri-search-line search__icon"></i>
+           <input type="search" placeholder="Que estas buscando?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+
+     <!--==================== LOGIN ====================-->
+     <div class="login" id="login">
+        <form id="formulario_login" class="login__form">
+           <h2 class="login__title">Inicar Sesion</h2>
+           
+           <div class="login__group">
+              <div>
+                 <label for="email" class="login__label">Correo</label>
+                 <input name="usuario" type="text" placeholder="Escribe tu correo" id="usuario" class="login__input">
+              </div>
+              
+              <div>
+                 <label for="password" class="login__label">Contraseña</label>
+                 <input name="password" usuario type="password" placeholder="Digista tu contraseña" id="password" class="login__input">
+              </div>
+           </div>
+
+           <div>
+
+              <button type="submit" id="bnt_login" class="login__button">Ingresar</button>
+           </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+
+        <main class="l-main">
+          <!--==================== HOME ====================-->
+            <section class="home " id="home">
+
+            <div class="home__grid">
+
+                <div class="home__container">
+                    <div class="home__info">
+                        <h1>SOMOS ELITE JURIDICA FINANCIERA.</h1>
+                        <h3>ESCHAMOS TU NECESIDADES.</h3>
+                        <p>Donde tus preocupaciones encuentran soluciones. Con una experiencia sólida y un compromiso inquebrantable con nuestros clientes, estamos aquí para guiarlos a través de los desafíos legales con claridad y determinación. Descubre cómo podemos ayudarte a proteger tus derechos y alcanzar tus objetivos legales. Juntos, encontraremos la mejor manera de avanzar.</p>
+                        <div class="home__butoms">
+                            <a class="home__apoyar" href="contacto">Contactar</a>
+                            <a class="home__sabermas" id="home__abrid_modal" >Ver Programa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===== PROGRAMA CARD ABOGADO LOS ESCUCHA=====-->
+
+                <div class="modal__content" id="padre_modal">
+                    <div class="modal__center">
+                        <div class="card__container">
+                            <h3>“EL ABOGADO LOS ESCHUCHA”</h3>
+                            <img src="assets/img/home/programa_abogado.png" alt="">
+
+                            <div class="card__content">
+                                <h4>Te invitamos a nuestro programa de Radio.</h4>
+                                <p>"El programa 'El Abogado Escucha' emerge como respuesta a la creciente necesidad de comprender aspectos legales y jurídicos en la sociedad. A través de su formato accesible y cercano, no solo brinda claridad en temas legales complejos, sino que también fomenta la identificación y empatía entre sus audiencias.</p>
+                                <ul>
+                                    <li>La emisora: <span class="datos_card"> "La voz de los sentauros"</span></li>
+                                    <li>Frecuencia: <span class="datos_card"> 1140.0 AM</span></li>
+                                    <li>Horarios: <span class="datos_card"> Los sabados de 1 - 2 PM</span></li>
+                                </ul>
+                                <div class="card__bts_modal">
+                                    <a class="home__apoyar btn_ver_canal" href="https://www.youtube.com/@Elabogadolosescucha" target="_blank">Ver Canal</a>
+                                    <span class="bnt_close_modal" id="card_cerrar_modal">Cerrar</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--===== PROGRAMA CARD ABOGADO LOS ESCUCHA=====-->
+
+                <div class="card__container no_modal">
+                    <h3>“EL ABOGADO LOS ESCHUCHA”</h3>
+                    <img src="assets/img/home/programa_abogado.png" alt="">
+
+                    <div class="card__content">
+                        <h4>Te invitamos a nuestro programa de Radio.</h4>
+                        <p>"El programa 'El Abogado Escucha' emerge como respuesta a la creciente necesidad de comprender aspectos legales y jurídicos en la sociedad. A través de su formato accesible y cercano, no solo brinda claridad en temas legales complejos, sino que también fomenta la identificación y empatía entre sus audiencias.</p>
+                        <ul>
+                            <li>La emisora: <span class="datos_card"> "La voz de los sentauros"</span></li>
+                            <li>Frecuencia: <span class="datos_card"> 1140.0 AM</span></li>
+                            <li>Horarios: <span class="datos_card"> Los sabados de 1 - 2 PM</span></li>
+                        </ul>
+                        <div class="card__bts_modal"> 
+                            <a class="home__apoyar btn_ver_canal" href="https://www.youtube.com/@Elabogadolosescucha" target="_blank">Ver Canal</a>
+                            <span class="bnt_close_modal no_modal_bnt_cerrar" id="card_cerrar_modal">Cerrar</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+              
+            </section>
+
+
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">  
+
+                <div class="about__container bd-grid">
+
+                    <div class="about__images">
+                        <div class="about__img">
+                            <img src="assets/img/home/quienes_somos.jpg" alt="">
+                        </div>
+    
+                        <div class="about__img">
+                            <img src="assets/img/home/quienes_somos.jpg" alt="">
+                        </div>
+    
+                        <div class="about__img">
+                            <img src="assets/img/home/quienes_somos.jpg" alt="">
+                        </div>
+    
+                        <div class="about__img">
+                            <img src="assets/img/home/quienes_somos.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="about__content">
+                        <h2 class="section-title">Acerca De Nosotros</h2>
+                        <p>Donde tus preocupaciones encuentran soluciones. Con una experiencia sólida y un compromiso inquebrantable con nuestros clientes, estamos aquí para guiarlos a través de los desafíos legales con claridad y determinación. Descubre cómo podemos ayudarte a proteger tus derechos y alcanzar tus objetivos legales. Juntos, encontraremos la mejor manera de avanzar.</p>
+                        
+                        <div class="container__cards">
+
+                            <div class="card-container">
+                                <div class="card">
+                                  <div class="front">
+                                    Visión
+                                  </div>
+                                  <div class="back">
+                                    <p>Nuestra visión es que en un término de 5 años seremos un colectivo de abogados de elite que sea respetado por conseguir la supremacía de la justicia real y efectiva en un plazo razonable.</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="card_icon">
+                                <img src="assets/icons/icon_mause.png" alt="">
+                              </div>
+                    
+                              <div class="card-container">
+                                <div class="card">
+                                  <div class="front">
+                                    Misión
+                                  </div>
+                                  <div class="back">
+                                    <p>Defender a los débiles, a las víctimas y poner a su disposición nuestro conocimiento jurídico y profesionalismo para que se imponga la primacía de los derechos inalienables del ser humano.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== ARTICULOS ======-->
+
+            <section class="noticias section" >
+                <h2 class="section-title title-que">Ultimas Noticias Y Articulos</h2>
+
+                <div class="noticias__container bd-grid grid_noticias" id="articulos__data__card">
+                  
+                </div>
+
+                <a class="noticias__btn" href="articulos">Ver más</a>
+
+           </section>
+
+
+
+            <!--===== Nuestros servicios =====-->
+            <section class="servicios section" id="servicios">
+                <h2 class="section-title ">Nuestos Servicios</h2>
+
+                
+                <div class="servicios__container bd-grid">
+                    
+                    <div class="servicios__parrafo">
+                        <p>En nuestra firma legal, nos dedicamos a proporcionar una amplia gama de servicios legales diseñados para satisfacer las necesidades únicas de nuestros clientes. Con un enfoque en la excelencia, la integridad y el compromiso con los resultados, estamos aquí para ofrecer soluciones efectivas a una variedad de desafíos legales.
+                    </div>
+
+                    <div class="contenedor__cards_servicios">
+
+                        <div class="card_servicios">
+    
+                          <div class="card__image-holder">
+                            <img class="card__image" src="assets/img/home/derecho_comercial.jpeg" alt="wave" />
+                          </div>
+
+
+                          <div class="card-title">
+
+                            <a href="#" class="toggle-info btn">
+                              <span class="left"></span>
+                              <span class="right"></span>
+                            </a>
+
+                            <h2>
+                                Derecho comercial
+                            </h2>
+
+                          </div>
+
+                          <div class="card-flap flap1">
+
+                            <div class="card-description">
+                              Refiere al conjunto de normativas y reglamentos que rigen las actividades comerciales y empresariales. Trata principalmente sobre las relaciones entre las empresas, así como entre estas y sus clientes, proveedores, acreedores y otras partes interesadas.
+                            </div>
+
+                            <div class="card-flap flap2">
+
+                              <div class="card-actions">
+
+                                <a href="#" class="btn">Leer Más</a>
+                              </div>
+                              
+                            </div>
+
+                          </div>
+                        </div>
+                      
+                        <div class="card_servicios">
+                          <div class="card__image-holder">
+                            <img class="card__image" src="assets/img/home/decehos_civiles.jpeg" alt="beach" />
+                          </div>
+                          <div class="card-title">
+                            <a href="#" class="toggle-info btn">
+                              <span class="left"></span>
+                              <span class="right"></span>
+                            </a>
+                            <h2>
+                                Derecho civil
+                            </h2>
+                          </div>
+                          <div class="card-flap flap1">
+                            <div class="card-description">
+                              Se ocupa de regular las relaciones entre individuos y entidades privadas, así como los derechos y deberes que surgen de esas relaciones. Es una rama del derecho que abarca una amplia gama de temas relacionados con la vida cotidiana de las personas.
+                            </div>
+                            <div class="card-flap flap2">
+                              <div class="card-actions">
+                                <a href="#" class="btn">Leer Más</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="card_servicios">
+                          <div class="card__image-holder">
+                            <img class="card__image" src="assets/img/home/derechos_laborales.jpeg" alt="mountain" />
+                          </div>
+                          <div class="card-title">
+                            <a href="#" class="toggle-info btn">
+                              <span class="left"></span>
+                              <span class="right"></span>
+                            </a>
+                            <h2>
+                                Derecho laboral
+                            </h2>
+                          </div>
+                          <div class="card-flap flap1">
+                            <div class="card-description">
+                              Se centra en las relaciones laborales entre empleadores y empleados, así como en las normativas que regulan esas relaciones. Cubre una amplia gama de temas, incluyendo contratos de trabajo, condiciones laborales, salarios, seguridad en el trabajo, protección social, sindicatos, y resolución de conflictos laborales, entre otros.
+                            </div>
+                            <div class="card-flap flap2">
+                              <div class="card-actions">
+                                <a href="#" class="btn">Leer Más</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="card_servicios">
+                          <div class="card__image-holder">
+                            <img class="card__image" src="assets/img/home/juridica.jpeg" alt="field" />
+                          </div>
+                          <div class="card-title">
+                            <a href="#" class="toggle-info btn">
+                              <span class="left"></span>
+                              <span class="right"></span>
+                            </a>
+                            <h2>
+                                Derecho tributario
+                            </h2>
+                          </div>
+                          <div class="card-flap flap1">
+                            <div class="card-description">
+                              Se enfoca en las leyes y regulaciones que gobiernan la imposición y recaudación de impuestos por parte de los gobiernos. Tiene como objetivo establecer el marco legal para la recaudación de ingresos fiscales que los gobiernos utilizan para financiar sus actividades y servicios públicos.
+                            </div>
+                            <div class="card-flap flap2">
+                              <div class="card-actions">
+                                <a href="#" class="btn">Leer Más</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="card_servicios">
+                          <div class="card__image-holder">
+                            <img class="card__image" src="assets/img/home/financiera.jpeg" alt="water" />
+                          </div>
+                          <div class="card-title">
+                            <a href="#" class="toggle-info btn">
+                              <span class="left"></span>
+                              <span class="right"></span>
+                            </a>
+                            <h2>
+                                Derecho financiero
+                            </h2>
+                          </div>
+                          <div class="card-flap flap1">
+                            <div class="card-description">
+                              Se ocupa de regular las actividades y relaciones financieras, incluyendo la creación, funcionamiento y regulación de instituciones financieras, así como las transacciones financieras en general. Es una rama del derecho que se relaciona estrechamente con el sistema financiero y económico de un país.
+                            </div>
+                            <div class="card-flap flap2">
+                              <div class="card-actions">
+                                <a href="#" class="btn">Leer Más</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="card_servicios">
+                          <div class="card__image-holder">
+                            <img class="card__image" src="assets/img/home/juridica.jpeg" alt="river" />
+                          </div>
+                          <div class="card-title">
+                            <a href="#" class="toggle-info btn">
+                              <span class="left"></span>
+                              <span class="right"></span>
+                            </a>
+                            <h2>
+                                Derecho penal
+                            </h2>
+                          </div>
+                          <div class="card-flap flap1">
+                            <div class="card-description">
+                              Se ocupa de regular el comportamiento humano que es considerado como una ofensa o delito en la sociedad. Tiene como objetivo principal mantener el orden público, proteger a los ciudadanos y castigar a aquellos que violan las leyes penales establecidas.
+                            </div>
+                            <div class="card-flap flap2">
+                              <div class="card-actions">
+                                <a href="#" class="btn">Leer Más</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                   
+                                       
+                      </div>
+
+                </div>
+
+            </section>
+
+            <!--===== UBICANOS =====-->
+            <section class="ubicanos section" id="unicanos">
+                <h2 class="section-title title__ubicanos">Ubicanos</h2>
+
+                <div class="ubicanos__container">
+                    <div class="ubicanos__banner">
+                        <p>Estamos ubicados en Carrera 13 E # 36 239 Villavicencio - centro comercial Villacentro. </br> Pasillo a la izquierda en la entrada principal.</p>
+                    </div>
+                </div>
+                
+            </section>
+
+               
+
+            <!--===== Casos de exito ====== -->
+            <section class="casos section" id="casos">
+                <h2 class="section-title">Casos De Exito</h2>
+                <p class="casos__text">En esta sesión, exploraremos historias de éxito en el ámbito jurídico y financiero, destacando el papel fundamental que desempeña un servicio legal de élite. Desde la resolución de complejos litigios hasta la protección de activos financieros, los casos que examinaremos revelan la excelencia y dedicación de los abogados de élite. Estas narrativas no solo ilustran triunfos legales y financieros, sino que también subrayan el compromiso inquebrantable de proporcionar asesoramiento jurídico excepcional y estrategias innovadoras para alcanzar el éxito en los desafíos más exigentes.</p>
+                
+                <div class="casos__container bd-grid casos__grid" id="casos__data__card"></div>
+
+                <a class="noticias__btn" href="casos_de_exito">Ver más</a>
+
+            </section>
+
+            <!--===== Proyecto =====-->
+            <section class="proyecto section" id="proyecto">
+                <div class="proyecto__content bd-grid">
+                    <h2>¿Tienes un caso?</h2>
+                    <p>Si tienes un caso jurídico y necesitas ayuda, no dudes en contactarnos. Te proporcionamos las herramientas necesarias para resolver tu situación. ¡Estamos aquí para escucharte y ayudarte!</p>                   
+                    <a href="contacto" class="proyecto__btn" >Contactanos</a>                 
+                </div>
+            </section>
+
+        </main>
+
+
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+
+            <div class="footer__container">
+
+                <div class="footer__contacto">
+                    <h3 class="footer__title" >Contactos</h3>
+                    
+                    <ul class="footer__lista">
+                        <li>Carrera 13 E # 36 239 villavicencio</li>
+                        <li>Jaiverd@gmail.com</li>
+                        <li>+57 300 5709430</li>                
+                    </ul>
+                </div>
+
+                <br>
+
+                <div class="footer__ubicanos">
+                    <h3 class="footer__title">Nos Encuentras En</h3>
+                    <ul class="footer__lista">
+                        <li>Estamos ubicados en Carrera 13 E # 36 239 villavicencio.</li>
+                        <li>Tambien puedes seguirnos en las siguientes.</li>
+                    </ul>
+                    <div class="footer__link">
+                        <span>Redes Sociales</span>
+                        <a href="https://www.facebook.com/profile.php?id=100063735883671" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://www.youtube.com/@Elabogadolosescucha" class="footer__icon"><i class='bx bxl-youtube' ></i></a>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="Enlaces__Rapidos">
+                    <h3 class="footer__title">Enlaces</h3>
+                    <ul  class="footer__lista ul_enlaces">
+                        <li><a href="conocenos">Noticias y articulos</a></li>
+                        <li><a href="">Casos de exito</a></li>
+                        <li><a href="documentos">Contacto</a></li>
+                        <li><a href="contacto">Home</a></li>
+                    </ul>
+                </div>
+
+                <hr class="footer__linea">
+                <br>
+                
+                <p class="footer_copy">&#169; copyright Todos Los Derechos Reservados. 2019 - <span id="yeard_current"></span></p>
+
+            </div>
+
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+
+
+        <script src="assets/js/main_nav.js"></script>
+        <script src="assets/js/login.js"></script>
+        <script src="assets/js/helpers.js"></script>
+
+        <script src="assets/js/home/articulos_home.js"></script>
+        <script src="assets/js/home/casos_home.js"></script>
+
+    </body>
+</html>         

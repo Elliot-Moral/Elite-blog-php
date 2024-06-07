@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/reglas.css">
+    <link rel="stylesheet" href="assets/css/configuracion.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ========= Favicon ========== -->
+
+    <link rel="shortcut icon" type="image/jpg" href="/assets/icons/fabicon.png" />
+
+    <title>Configuracion - Fundación Para La Niñez | Funaje</title>
+    <style>
+
+    </style>
+</head>
+
+<body">
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+           <!-- <a href="#" class="nav__logo">Logo</a> -->
+           <img src="assets/icons/Logo -Elite.png"  width="130px" alt="">
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="home" class="nav__link">Incio</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="home" class="nav__link">Sobre Nosotros</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="home" class="nav__link">Servicios</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="home" class="nav__link">Contacto</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="home" class="nav__link">Blog</a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+            <!-- Search button -->
+            <i class="ri-search-line nav__search" id="search-btn"></i>
+
+            <!-- Login button -->
+            <i class="ri-user-line nav__login" id="login-btn"></i>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </div>
+
+        </nav>
+     </header>
+
+     <!--==================== SEARCH ====================-->
+     <div class="search" id="search">
+        <form action="" class="search__form">
+           <i class="ri-search-line search__icon"></i>
+           <input type="search" placeholder="Que estas buscando?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+
+     <!--==================== LOGIN ====================-->
+     <div class="login" id="login">
+        <form id="formulario_login" class="login__form">
+           <h2 class="login__title">Inicar Sesion</h2>
+           
+           <div class="login__group">
+              <div>
+                 <label for="email" class="login__label">Correo</label>
+                 <input name="usuario" type="text" placeholder="Escribe tu correo" id="usuario" class="login__input">
+              </div>
+              
+              <div>
+                 <label for="password" class="login__label">Contraseña</label>
+                 <input name="password" usuario type="password" placeholder="Digista tu contraseña" id="password" class="login__input">
+              </div>
+           </div>
+
+           <div>
+
+              <button type="submit" id="bnt_login" class="login__button">Ingresar</button>
+           </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+     </div>
+
+    <main class="l-main">
+
+        <!--==================== HOME ====================-->
+        <!--===== About =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">Configuracion</h2>
+
+            <div class="about__container bd-grid ">
+
+
+                <div class="about__card">
+                    <h3>Articulos</h3>
+                    <p>Aqui se van gentionando todos los articulos
+                    </p>
+                </div>
+
+                <div class="about__card">
+                    <h3>Casos De Exito</h3>
+                    <p>Aqui se van gentionando todos los casos
+                    </p>
+                </div>
+
+                <div class="about__card">
+                    <h3>Usuarios</h3>
+                    <p>Aqui se van gentionando todos los usuarios
+                    </p>
+                </div>
+
+
+            </div>
+
+            <!-- VENTANA CASOS DE EXITO -->
+            <div class="fondo__modal bd-grid" id="modal">
+                <div class="container_modal">
+
+                    <div id="ventana_modal" class="about__modal">
+
+                        <!-- MODAL 1 -->
+                        <div id="modal_1" class="modal_1 modal_activo">
+
+                            <h2 id="titleModal_">Casos de exito</h2>
+                            <hr>
+
+                            <table class="table">
+
+                                <thead class="table__head">
+                                    <tr>
+                                        <th>N.</th>
+                                        <th>Titulo</th>
+                                        <th>Descripción</th>
+                                        <th>Imagen</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="datos_tabla">
+                                </tbody>
+
+                            </table>
+                            
+                            <hr>
+
+                            <div class="botones__crud">
+                                <img src="" alt="">
+                                <button id="bnt_add" class="crud__bnt">Agregar</button>
+                                <button id="bnt_update" class="crud__bnt">Editar</button>
+                                <button id="bnt_delete" class="crud__bnt">Eliminar</button>
+                            </div>
+                            <button class="modal_btn_cerrar" id="btn_modal">Cerrar</button>
+                        </div>
+
+
+                        <!-- MODAL 2  CASOS DE EXITO!. --> 
+                        <div id="modal_2" class="modal_2">
+                            <h2 id="action_modal_caso">Agregar nuevo caso de exito</h2>
+                            <hr>
+
+                            <form action="" id="data_form_caso">
+
+                                <div class="form__labels">
+                                    <label for="">Título del caso:</label>
+                                    <input id="in_tit_caso" name="titulo_caso" class="modal2_input" type="text" required>
+                             
+                                        
+                                    <label for="">Descripción del caso:</label>
+                                    <input id="in_desc_caso" name="desc_caso" class="modal2_input" type="text" required>
+                             
+                                
+                                    <div class="autor_categorira">
+                                        <label for="">Cliente:</label>
+                                        <input id="in_autor_caso" name="autor_caso" class="modal2_input" type="text" required>
+                                        <label for="">Categoria del caso:</label>
+                                        <select id="in_categ_caso" name="categ_caso" class="modal2_input" type="text" required>
+                                            <option value="derecho comercial">Derecho comercial</option>
+                                            <option value="derecho civil">Derecho civil</option>
+                                            <option value="derecho laboral">Derecho laboral</option>
+                                            <option value="derecho tributario">Derecho tributario</option>
+                                            <option value="derecho financiero">Derecho financiero</option>
+                                            <option value="derecho penal">Derecho penal</option>
+                                            <option value="libertad financiera">Libertad financiera</option>
+                                        </select>
+                                    </div>
+                               </div>
+
+                                <div class="form__text_area">
+                                    <label for="">Cuerpo Del Caso:</label>
+                                    <textarea id="in_body_caso"  name="body_caso" class="text_area" type="text" required ></textarea>
+                                </div>
+
+                                <div class="fomr_img">
+    
+                                    <div id="montrar_imagen_act" class="modal2_montrar_imge ">
+                                        <div class="imgage__card">
+                                            <span>imagen principal</span>
+                                            <img id="img1_update_caso" src="media/articulos/imagen.jpg" alt="">
+                                        </div>
+
+                                        <div class="imgage__card">
+                                            <span>imagen segundaria</span>
+                                            <img id="img2_update_caso" src="media/articulos/imagen.jpg" alt="">
+                                        </div>
+
+                                        <div class="imgage__card">
+                                            <span>imagen terciaria</span>
+                                            <img id="img3_update_caso" src="media/articulos/imagen.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__subir_file">
+                                    <div class="div_file">
+                                        <p class="div_text">Subir la Imagen "principal"</p>
+                                        <input id="in_img1_caso"  name="file1_caso" class="bnt_file" type="file" required>
+                                    </div>
+    
+                                    <div class="div_file">
+                                        <p class="div_text">Subir segunda "opcional"</p>
+                                        <input id="in_img2_caso"  name="file2_caso" class="bnt_file" type="file" >
+                                    </div>
+    
+                                    <div class="div_file">
+                                        <p class="div_text">Subir tercera "opcional"</p>
+                                        <input id="in_img3_caso"  name="file3_caso" class="bnt_file" type="file" >
+                                    </div>
+                                </div>
+
+                            
+                                <div class="bnts_modal2_act">
+                                    <button id="btn_modal2_cerrar_caso" class="crud__bnt bnt_modal_2 modal_2_cerrar">Cancelar</button>
+                                    <input type="submit" id="btn_modal2_guardar_caso" class="crud__bnt bnt_modal_2" value="Guardar">
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- //VENTANA ARTICULOS -->
+            <div class="fondo__modal bd-grid" id="modal_actidades">
+                <div class="container_modal">
+
+                    <div id="ventana_modal_act" class="about__modal">
+
+                        <!-- MODAL 1 -->
+                        <div id="modal_1_act" class="modal_1 modal_activo">
+                            <h2>Acticulos</h2>
+                            <hr>
+                            <table class="table modal_acti_container_data" >
+                                <thead class="table__header" >
+                                    <td>N.</td>
+                                    <td>Titulo</td>
+                                    <td>Descripción</td>
+                                    <td>Imagen</td>
+                                </thead>
+                                <tbody id="data_actividades"></tbody>
+                            </table>
+                            <hr>
+                            <div class="botones__crud">
+                                <img src="" alt="">
+                                <button id="bnt_add_acti" class="crud__bnt">Agregar</button>
+                                <button id="bnt_update_acti" class="crud__bnt">Editar</button>
+                                <button id="bnt_delete_acti" class="crud__bnt">Eliminar</button>
+                            </div>
+                            <button class="modal_btn_cerrar" id="btn_modal_acti">Cerrar</button>
+                        </div>
+
+                        <!-- MODAL 2 -->
+                        <div id="modal_2_act" class="modal_2">
+                            <h2 id="action_modal_act" class="modal2_h2">Agregar Nuevo Articulo</h2>
+                            <hr>
+
+                            <form action="" id="data_form_act">
+
+                                <div class="form__labels">
+                                    <label for="">Título:</label>
+                                    <input id="in_tit_act" name="titulo_act" class="modal2_input" type="text" required>
+                             
+                                        
+                                    <label for="">Descripción:</label>
+                                    <input id="in_desc_act" name="desc_act" class="modal2_input" type="text" required>
+                             
+                                
+                                    <div class="autor_categorira">
+                                        <label for="">Autor:</label>
+                                        <input id="in_autor_act" name="autor_act" class="modal2_input" type="text" required>
+                                        <label for="">Categoria:</label>
+                                        <select id="in_categ_act" name="categ_act" class="modal2_input" type="text" required>
+                                            <option value="noticias">Noticias</option>
+                                            <option value="leyes">Leyes</option>
+                                            <option value="derechos">Derechos</option>
+                                            <option value="financiera">Finaciera</option>
+                                        </select>
+                                    </div>
+                               </div>
+
+                                <div class="form__text_area">
+                                    <label for="">Cuerpo Del Articulo:</label>
+                                    <textarea id="in_body_act"  name="body_act" class="text_area" type="text" required ></textarea>
+                                </div>
+
+                                <div class="fomr_img">
+    
+                                    <div id="montrar_imagen_act" class="modal2_montrar_imge ">
+                                        <div class="imgage__card">
+                                            <span>imagen principal</span>
+                                            <img id="img1_update_act" src="media/articulos/imagen.jpg" alt="">
+                                        </div>
+
+                                        <div class="imgage__card">
+                                            <span>imagen segundaria</span>
+                                            <img id="img2_update_act" src="media/articulos/imagen.jpg" alt="">
+                                        </div>
+
+                                        <div class="imgage__card">
+                                            <span>imagen terciaria</span>
+                                            <img id="img3_update_act" src="media/articulos/imagen.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__subir_file">
+                                    <div class="div_file">
+                                        <p class="div_text">Subir la Imagen "principal"</p>
+                                        <input id="in_img1_act"  name="file1_act" class="bnt_file" type="file" required>
+                                    </div>
+    
+                                    <div class="div_file">
+                                        <p class="div_text">Subir segunda "opcional"</p>
+                                        <input id="in_img2_act"  name="file2_act" class="bnt_file" type="file" >
+                                    </div>
+    
+                                    <div class="div_file">
+                                        <p class="div_text">Subir tercera "opcional"</p>
+                                        <input id="in_img3_act"  name="file3_act" class="bnt_file" type="file" >
+                                    </div>
+                                </div>
+
+                            
+                                <div class="bnts_modal2_act">
+                                    <button id="btn_modal2_cerrar_act" class="crud__bnt bnt_modal_2 modal_2_cerrar">Cancelar</button>
+                                    <input type="submit" id="btn_modal2_guardar_act" class="crud__bnt bnt_modal_2" value="Guardar">
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/configuracion.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,103 @@
+/*==================== HOME ====================*/
+.home{
+    margin-top: 90px;
+  }
+  .home__bg{
+    width: 100%;
+    height: 230px;
+    background-image: url("../img/home/juridica.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .title__home{
+    color: #fff;
+    width: 100%;
+    padding: 2em;
+    background-color: #000000a9;
+    text-align: center;
+  }
+
+
+  p{
+    margin-bottom: 1em;
+  }
+
+  .about__img{
+    width: 100%;
+    height: 200px;
+    background-color: lightcoral;
+    margin: 1em auto;
+    img{
+      border-radius: 10px;
+    }
+  }
+  .about__subtitle{
+    margin-bottom: 11px;
+  }
+
+  
+/* =================== MEDIA QUERIES======================================*/
+@media screen and (min-width: 768px){
+    body{
+      margin: 0;
+    }
+    .section{
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+    .section-title{
+      margin-bottom: var(--mb-6);
+    }
+    .section-title::after{
+      width: 80px;
+      top: 3rem;
+    }
+  
+    /* ===== ARTICULOS ===== */
+    .about__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+  
+  
+  }
+  
+  
+
+  
+  @media screen and (min-width: 1024px){
+    .bd-grid{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .home__bg{
+      height: 420px;  
+    }
+      /* banner */
+    .home__container{
+
+      height: 1000px;
+
+    
+    }
+  
+    /* ===== ARTICULOS ===== */
+    .about__img{
+      height: 300px;
+    }
+
+    .title__home{
+    color: #fff;
+    font-size: 40px;
+
+    }
+
+  
+  
+  }
